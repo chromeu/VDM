@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20044EC518E403B700CB99BB /* NSObject+VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EAD18E403B700CB99BB /* NSObject+VSDependencyManager.m */; };
+		20044EC618E403B700CB99BB /* UIControl+VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EAF18E403B700CB99BB /* UIControl+VSDependencyManager.m */; };
+		20044EC718E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EB118E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.m */; };
+		20044EC818E403B700CB99BB /* UIView+VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EB318E403B700CB99BB /* UIView+VSDependencyManager.m */; };
+		20044EC918E403B700CB99BB /* UIViewController+VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EB518E403B700CB99BB /* UIViewController+VSDependencyManager.m */; };
+		20044ECA18E403B700CB99BB /* VSDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EB818E403B700CB99BB /* VSDependencyManager.m */; };
+		20044ECB18E403B700CB99BB /* VSDependencyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EBA18E403B700CB99BB /* VSDependencyObject.m */; };
+		20044ECC18E403B700CB99BB /* VSMethodHander.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EBC18E403B700CB99BB /* VSMethodHander.m */; };
+		20044ECD18E403B700CB99BB /* VSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EBE18E403B700CB99BB /* VSPickerView.m */; };
+		20044ECE18E403B700CB99BB /* VSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EC018E403B700CB99BB /* VSScrollView.m */; };
+		20044ECF18E403B700CB99BB /* VSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EC218E403B700CB99BB /* VSTableView.m */; };
+		20044ED018E403B700CB99BB /* VSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20044EC418E403B700CB99BB /* VSTimer.m */; };
+		205CDF4D18E27353006411BD /* ScrolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205CDF4C18E27353006411BD /* ScrolViewController.m */; };
+		205CDF5018E27842006411BD /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 205CDF4F18E27842006411BD /* CustomView.m */; };
+		205CDF5318E2790D006411BD /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205CDF5218E2790D006411BD /* TableController.m */; };
+		205CDF5618E281CF006411BD /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 205CDF5518E281CF006411BD /* PickerViewController.m */; };
+		3DBEEBF118E004E700D71C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEBF018E004E700D71C9C /* Foundation.framework */; };
+		3DBEEBF318E004E700D71C9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEBF218E004E700D71C9C /* CoreGraphics.framework */; };
+		3DBEEBF518E004E700D71C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEBF418E004E700D71C9C /* UIKit.framework */; };
+		3DBEEBFB18E004E700D71C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBEEBF918E004E700D71C9C /* InfoPlist.strings */; };
+		3DBEEBFD18E004E700D71C9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEBFC18E004E700D71C9C /* main.m */; };
+		3DBEEC0118E004E700D71C9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEC0018E004E700D71C9C /* AppDelegate.m */; };
+		3DBEEC0418E004E700D71C9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBEEC0218E004E700D71C9C /* Main.storyboard */; };
+		3DBEEC0718E004E700D71C9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEC0618E004E700D71C9C /* ViewController.m */; };
+		3DBEEC0918E004E700D71C9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBEEC0818E004E700D71C9C /* Images.xcassets */; };
+		3DBEEC1018E004E700D71C9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEC0F18E004E700D71C9C /* XCTest.framework */; };
+		3DBEEC1118E004E700D71C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEBF018E004E700D71C9C /* Foundation.framework */; };
+		3DBEEC1218E004E700D71C9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBEEBF418E004E700D71C9C /* UIKit.framework */; };
+		3DBEEC1A18E004E700D71C9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DBEEC1818E004E700D71C9C /* InfoPlist.strings */; };
+		3DBEEC1C18E004E700D71C9C /* VSReplaceMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEEC1B18E004E700D71C9C /* VSReplaceMethodTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DBEEC1318E004E700D71C9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DBEEBE518E004E700D71C9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DBEEBEC18E004E700D71C9C;
+			remoteInfo = VSReplaceMethod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20044EAC18E403B700CB99BB /* NSObject+VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VSDependencyManager.h"; sourceTree = "<group>"; };
+		20044EAD18E403B700CB99BB /* NSObject+VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VSDependencyManager.m"; sourceTree = "<group>"; };
+		20044EAE18E403B700CB99BB /* UIControl+VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+VSDependencyManager.h"; sourceTree = "<group>"; };
+		20044EAF18E403B700CB99BB /* UIControl+VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+VSDependencyManager.m"; sourceTree = "<group>"; };
+		20044EB018E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+VSDependencyManager.h"; sourceTree = "<group>"; };
+		20044EB118E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+VSDependencyManager.m"; sourceTree = "<group>"; };
+		20044EB218E403B700CB99BB /* UIView+VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VSDependencyManager.h"; sourceTree = "<group>"; };
+		20044EB318E403B700CB99BB /* UIView+VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VSDependencyManager.m"; sourceTree = "<group>"; };
+		20044EB418E403B700CB99BB /* UIViewController+VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VSDependencyManager.h"; sourceTree = "<group>"; };
+		20044EB518E403B700CB99BB /* UIViewController+VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VSDependencyManager.m"; sourceTree = "<group>"; };
+		20044EB618E403B700CB99BB /* VSDependencyCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDependencyCommon.h; sourceTree = "<group>"; };
+		20044EB718E403B700CB99BB /* VSDependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDependencyManager.h; sourceTree = "<group>"; };
+		20044EB818E403B700CB99BB /* VSDependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDependencyManager.m; sourceTree = "<group>"; };
+		20044EB918E403B700CB99BB /* VSDependencyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDependencyObject.h; sourceTree = "<group>"; };
+		20044EBA18E403B700CB99BB /* VSDependencyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSDependencyObject.m; sourceTree = "<group>"; };
+		20044EBB18E403B700CB99BB /* VSMethodHander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSMethodHander.h; sourceTree = "<group>"; };
+		20044EBC18E403B700CB99BB /* VSMethodHander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSMethodHander.m; sourceTree = "<group>"; };
+		20044EBD18E403B700CB99BB /* VSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPickerView.h; sourceTree = "<group>"; };
+		20044EBE18E403B700CB99BB /* VSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSPickerView.m; sourceTree = "<group>"; };
+		20044EBF18E403B700CB99BB /* VSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSScrollView.h; sourceTree = "<group>"; };
+		20044EC018E403B700CB99BB /* VSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSScrollView.m; sourceTree = "<group>"; };
+		20044EC118E403B700CB99BB /* VSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTableView.h; sourceTree = "<group>"; };
+		20044EC218E403B700CB99BB /* VSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTableView.m; sourceTree = "<group>"; };
+		20044EC318E403B700CB99BB /* VSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTimer.h; sourceTree = "<group>"; };
+		20044EC418E403B700CB99BB /* VSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTimer.m; sourceTree = "<group>"; };
+		20044ED218E4094600CB99BB /* VDMTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDMTest-Prefix.pch"; sourceTree = "<group>"; };
+		205CDF4B18E27353006411BD /* ScrolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrolViewController.h; sourceTree = "<group>"; };
+		205CDF4C18E27353006411BD /* ScrolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrolViewController.m; sourceTree = "<group>"; };
+		205CDF4E18E27842006411BD /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		205CDF4F18E27842006411BD /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		205CDF5118E2790D006411BD /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
+		205CDF5218E2790D006411BD /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		205CDF5418E281CF006411BD /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		205CDF5518E281CF006411BD /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		3DBEEBED18E004E700D71C9C /* VDMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBEEBF018E004E700D71C9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DBEEBF218E004E700D71C9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DBEEBF418E004E700D71C9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DBEEBF818E004E700D71C9C /* VDMTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VDMTest-Info.plist"; sourceTree = "<group>"; };
+		3DBEEBFA18E004E700D71C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBEEBFC18E004E700D71C9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DBEEBFF18E004E700D71C9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DBEEC0018E004E700D71C9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DBEEC0318E004E700D71C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DBEEC0518E004E700D71C9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DBEEC0618E004E700D71C9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DBEEC0818E004E700D71C9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DBEEC0E18E004E700D71C9C /* VDMTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDMTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DBEEC0F18E004E700D71C9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3DBEEC1918E004E700D71C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DBEEC1B18E004E700D71C9C /* VSReplaceMethodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSReplaceMethodTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DBEEBEA18E004E700D71C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBEEBF318E004E700D71C9C /* CoreGraphics.framework in Frameworks */,
+				3DBEEBF518E004E700D71C9C /* UIKit.framework in Frameworks */,
+				3DBEEBF118E004E700D71C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBEEC0B18E004E700D71C9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBEEC1018E004E700D71C9C /* XCTest.framework in Frameworks */,
+				3DBEEC1218E004E700D71C9C /* UIKit.framework in Frameworks */,
+				3DBEEC1118E004E700D71C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20044EAB18E403B700CB99BB /* VDM */ = {
+			isa = PBXGroup;
+			children = (
+				20044EAC18E403B700CB99BB /* NSObject+VSDependencyManager.h */,
+				20044EAD18E403B700CB99BB /* NSObject+VSDependencyManager.m */,
+				20044EAE18E403B700CB99BB /* UIControl+VSDependencyManager.h */,
+				20044EAF18E403B700CB99BB /* UIControl+VSDependencyManager.m */,
+				20044EB018E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.h */,
+				20044EB118E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.m */,
+				20044EB218E403B700CB99BB /* UIView+VSDependencyManager.h */,
+				20044EB318E403B700CB99BB /* UIView+VSDependencyManager.m */,
+				20044EB418E403B700CB99BB /* UIViewController+VSDependencyManager.h */,
+				20044EB518E403B700CB99BB /* UIViewController+VSDependencyManager.m */,
+				20044EB618E403B700CB99BB /* VSDependencyCommon.h */,
+				20044EB718E403B700CB99BB /* VSDependencyManager.h */,
+				20044EB818E403B700CB99BB /* VSDependencyManager.m */,
+				20044EB918E403B700CB99BB /* VSDependencyObject.h */,
+				20044EBA18E403B700CB99BB /* VSDependencyObject.m */,
+				20044EBB18E403B700CB99BB /* VSMethodHander.h */,
+				20044EBC18E403B700CB99BB /* VSMethodHander.m */,
+				20044EBD18E403B700CB99BB /* VSPickerView.h */,
+				20044EBE18E403B700CB99BB /* VSPickerView.m */,
+				20044EBF18E403B700CB99BB /* VSScrollView.h */,
+				20044EC018E403B700CB99BB /* VSScrollView.m */,
+				20044EC118E403B700CB99BB /* VSTableView.h */,
+				20044EC218E403B700CB99BB /* VSTableView.m */,
+				20044EC318E403B700CB99BB /* VSTimer.h */,
+				20044EC418E403B700CB99BB /* VSTimer.m */,
+			);
+			path = VDM;
+			sourceTree = SOURCE_ROOT;
+		};
+		3DBEEBE418E004E700D71C9C = {
+			isa = PBXGroup;
+			children = (
+				3DBEEBF618E004E700D71C9C /* VSReplaceMethod */,
+				3DBEEC1518E004E700D71C9C /* VSReplaceMethodTests */,
+				3DBEEBEF18E004E700D71C9C /* Frameworks */,
+				3DBEEBEE18E004E700D71C9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DBEEBEE18E004E700D71C9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEEBED18E004E700D71C9C /* VDMTest.app */,
+				3DBEEC0E18E004E700D71C9C /* VDMTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DBEEBEF18E004E700D71C9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEEBF018E004E700D71C9C /* Foundation.framework */,
+				3DBEEBF218E004E700D71C9C /* CoreGraphics.framework */,
+				3DBEEBF418E004E700D71C9C /* UIKit.framework */,
+				3DBEEC0F18E004E700D71C9C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DBEEBF618E004E700D71C9C /* VSReplaceMethod */ = {
+			isa = PBXGroup;
+			children = (
+				20044EAB18E403B700CB99BB /* VDM */,
+				3DBEEBFF18E004E700D71C9C /* AppDelegate.h */,
+				3DBEEC0018E004E700D71C9C /* AppDelegate.m */,
+				3DBEEC0218E004E700D71C9C /* Main.storyboard */,
+				3DBEEC0518E004E700D71C9C /* ViewController.h */,
+				3DBEEC0618E004E700D71C9C /* ViewController.m */,
+				3DBEEC0818E004E700D71C9C /* Images.xcassets */,
+				3DBEEBF718E004E700D71C9C /* Supporting Files */,
+				205CDF4E18E27842006411BD /* CustomView.h */,
+				205CDF4F18E27842006411BD /* CustomView.m */,
+				205CDF4B18E27353006411BD /* ScrolViewController.h */,
+				205CDF4C18E27353006411BD /* ScrolViewController.m */,
+				205CDF5118E2790D006411BD /* TableController.h */,
+				205CDF5218E2790D006411BD /* TableController.m */,
+				205CDF5418E281CF006411BD /* PickerViewController.h */,
+				205CDF5518E281CF006411BD /* PickerViewController.m */,
+			);
+			path = VSReplaceMethod;
+			sourceTree = "<group>";
+		};
+		3DBEEBF718E004E700D71C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20044ED218E4094600CB99BB /* VDMTest-Prefix.pch */,
+				3DBEEBF818E004E700D71C9C /* VDMTest-Info.plist */,
+				3DBEEBF918E004E700D71C9C /* InfoPlist.strings */,
+				3DBEEBFC18E004E700D71C9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DBEEC1518E004E700D71C9C /* VSReplaceMethodTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEEC1B18E004E700D71C9C /* VSReplaceMethodTests.m */,
+				3DBEEC1618E004E700D71C9C /* Supporting Files */,
+			);
+			path = VSReplaceMethodTests;
+			sourceTree = "<group>";
+		};
+		3DBEEC1618E004E700D71C9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DBEEC1818E004E700D71C9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DBEEBEC18E004E700D71C9C /* VDMTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBEEC1F18E004E700D71C9C /* Build configuration list for PBXNativeTarget "VDMTest" */;
+			buildPhases = (
+				3DBEEBE918E004E700D71C9C /* Sources */,
+				3DBEEBEA18E004E700D71C9C /* Frameworks */,
+				3DBEEBEB18E004E700D71C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDMTest;
+			productName = VSReplaceMethod;
+			productReference = 3DBEEBED18E004E700D71C9C /* VDMTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DBEEC0D18E004E700D71C9C /* VDMTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DBEEC2218E004E700D71C9C /* Build configuration list for PBXNativeTarget "VDMTestTests" */;
+			buildPhases = (
+				3DBEEC0A18E004E700D71C9C /* Sources */,
+				3DBEEC0B18E004E700D71C9C /* Frameworks */,
+				3DBEEC0C18E004E700D71C9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DBEEC1418E004E700D71C9C /* PBXTargetDependency */,
+			);
+			name = VDMTestTests;
+			productName = VSReplaceMethodTests;
+			productReference = 3DBEEC0E18E004E700D71C9C /* VDMTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DBEEBE518E004E700D71C9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YaoMing;
+				TargetAttributes = {
+					3DBEEC0D18E004E700D71C9C = {
+						TestTargetID = 3DBEEBEC18E004E700D71C9C;
+					};
+				};
+			};
+			buildConfigurationList = 3DBEEBE818E004E700D71C9C /* Build configuration list for PBXProject "VDMTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DBEEBE418E004E700D71C9C;
+			productRefGroup = 3DBEEBEE18E004E700D71C9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DBEEBEC18E004E700D71C9C /* VDMTest */,
+				3DBEEC0D18E004E700D71C9C /* VDMTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DBEEBEB18E004E700D71C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBEEC0918E004E700D71C9C /* Images.xcassets in Resources */,
+				3DBEEBFB18E004E700D71C9C /* InfoPlist.strings in Resources */,
+				3DBEEC0418E004E700D71C9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBEEC0C18E004E700D71C9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBEEC1A18E004E700D71C9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DBEEBE918E004E700D71C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20044EC918E403B700CB99BB /* UIViewController+VSDependencyManager.m in Sources */,
+				20044ECA18E403B700CB99BB /* VSDependencyManager.m in Sources */,
+				20044EC618E403B700CB99BB /* UIControl+VSDependencyManager.m in Sources */,
+				3DBEEC0718E004E700D71C9C /* ViewController.m in Sources */,
+				205CDF4D18E27353006411BD /* ScrolViewController.m in Sources */,
+				20044ED018E403B700CB99BB /* VSTimer.m in Sources */,
+				3DBEEC0118E004E700D71C9C /* AppDelegate.m in Sources */,
+				20044ECB18E403B700CB99BB /* VSDependencyObject.m in Sources */,
+				20044EC818E403B700CB99BB /* UIView+VSDependencyManager.m in Sources */,
+				205CDF5618E281CF006411BD /* PickerViewController.m in Sources */,
+				3DBEEBFD18E004E700D71C9C /* main.m in Sources */,
+				20044ECF18E403B700CB99BB /* VSTableView.m in Sources */,
+				205CDF5318E2790D006411BD /* TableController.m in Sources */,
+				20044ECD18E403B700CB99BB /* VSPickerView.m in Sources */,
+				20044EC718E403B700CB99BB /* UIGestureRecognizer+VSDependencyManager.m in Sources */,
+				20044ECE18E403B700CB99BB /* VSScrollView.m in Sources */,
+				205CDF5018E27842006411BD /* CustomView.m in Sources */,
+				20044EC518E403B700CB99BB /* NSObject+VSDependencyManager.m in Sources */,
+				20044ECC18E403B700CB99BB /* VSMethodHander.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DBEEC0A18E004E700D71C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DBEEC1C18E004E700D71C9C /* VSReplaceMethodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DBEEC1418E004E700D71C9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DBEEBEC18E004E700D71C9C /* VDMTest */;
+			targetProxy = 3DBEEC1318E004E700D71C9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DBEEBF918E004E700D71C9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBEEBFA18E004E700D71C9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DBEEC0218E004E700D71C9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBEEC0318E004E700D71C9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DBEEC1818E004E700D71C9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DBEEC1918E004E700D71C9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DBEEC1D18E004E700D71C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DBEEC1E18E004E700D71C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DBEEC2018E004E700D71C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSReplaceMethod/VDMTest-Prefix.pch";
+				INFOPLIST_FILE = "VSReplaceMethod/VDMTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/evan/Desktop/VSReplaceMethod,
+					"/Users/evan/Desktop/VSReplaceMethod\\ (branch)/VSReplaceMethod",
+				);
+				PRODUCT_NAME = VDMTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DBEEC2118E004E700D71C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSReplaceMethod/VDMTest-Prefix.pch";
+				INFOPLIST_FILE = "VSReplaceMethod/VDMTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/evan/Desktop/VSReplaceMethod,
+					"/Users/evan/Desktop/VSReplaceMethod\\ (branch)/VSReplaceMethod",
+				);
+				PRODUCT_NAME = VDMTest;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3DBEEC2318E004E700D71C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSReplaceMethod.app/VSReplaceMethod";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSReplaceMethod/VSReplaceMethod-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VSReplaceMethodTests/VSReplaceMethodTests-Info.plist";
+				PRODUCT_NAME = VDMTestTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3DBEEC2418E004E700D71C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VSReplaceMethod.app/VSReplaceMethod";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VSReplaceMethod/VSReplaceMethod-Prefix.pch";
+				INFOPLIST_FILE = "VSReplaceMethodTests/VSReplaceMethodTests-Info.plist";
+				PRODUCT_NAME = VDMTestTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DBEEBE818E004E700D71C9C /* Build configuration list for PBXProject "VDMTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBEEC1D18E004E700D71C9C /* Debug */,
+				3DBEEC1E18E004E700D71C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBEEC1F18E004E700D71C9C /* Build configuration list for PBXNativeTarget "VDMTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBEEC2018E004E700D71C9C /* Debug */,
+				3DBEEC2118E004E700D71C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DBEEC2218E004E700D71C9C /* Build configuration list for PBXNativeTarget "VDMTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DBEEC2318E004E700D71C9C /* Debug */,
+				3DBEEC2418E004E700D71C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DBEEBE518E004E700D71C9C /* Project object */;
+}
