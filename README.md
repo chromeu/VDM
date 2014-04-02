@@ -20,6 +20,11 @@ h
 9、NSTimer的target对象被释放后，定时任务执行导致的crash
 
 10、添加KVO重复添加观察者或重复移除观察者（KVO注册观察者与移除观察者不匹配）导致的crash
+
+
+
+
+
  
 实现的大致原理：
 
@@ -29,6 +34,13 @@ h
 在这些对象创建依赖时，将依赖关系以key-value的形式保存到我们的dependencyManager的单例中去
 
 3、category IOS中被依赖的对象UIVIew、UIViewController，当被依赖对象释放时，dependencyManager讲与之关联的依赖控件或手势、通知移除
+
+
+
+
+
+
+
 
 示例工程使用说明：
 
@@ -48,7 +60,6 @@ customview开启延时函数，并强制释放后，延时函数执行
 
 customview开启定时任务，并强制释放后，定时任务执行
 
- 
 2、用户加入自己操作防止crash
 VDMTest-Prefix.pch文件下
 加入
@@ -59,6 +70,13 @@ VDMTest-Prefix.pch文件下
 3、当程序不使用dependency管理工具，用户自己也不进行依赖解除，crash点都会崩溃
 当程序使用dependency管理工作或者用户自行解除依赖，以上crash点均不会crash
 所以用户在自行处理的情况下依然可以使用dependency管理工作，操作不会有任何影响
+
+
+
+
+
+
+
 
 
 其他工程嵌入：（dependency工具包支持arc和非arc模式，不需要工程配置）
